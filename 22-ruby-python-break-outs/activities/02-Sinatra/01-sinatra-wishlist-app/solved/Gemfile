@@ -1,0 +1,16 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+# gem "rails"
+gem "sinatra"
+# Database
+gem "mysql2"
+# ORM - like Sequelize
+gem 'sinatra-activerecord'
+# Task-automater
+gem 'rake'
+# Sends responses as JSON
+gem "json"

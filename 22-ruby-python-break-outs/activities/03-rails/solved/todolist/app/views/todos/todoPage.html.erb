@@ -1,0 +1,10 @@
+<div>
+   <h1>Todos</h1>
+   <ul>
+      <% @todoData.each do |item| %>
+         <li><%= item.text %></li>
+      <% end %>
+   </ul>
+   <hr>
+   <a href="/">Return home!</a>
+</div>

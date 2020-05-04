@@ -1,0 +1,19 @@
+default: &default
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+  username: root
+  password: Indeed@123
+  port: 3306
+
+development:
+  <<: *default
+  database: movies_db
+
+test:
+  <<: *default
+  database: movies_db
+
+production:
+  <<: *default
+  database: movies_db
