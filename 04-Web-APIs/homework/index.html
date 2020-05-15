@@ -4,19 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>Code Quiz</title>
 </head>
 <body>
-    <div class="nav">
-        <div class="score"></div>
-        <div class="timer"></div>
+<!--- Nav ------->
+ <div class="scores"><a href="highscores.html"></a></div>
+ <div class="timer">Time: <span id="time">0</span></div>
+
+<!-- Main ------->
+<div class="wrapper">
+    <!--- Quiz Intro divs-->
+    <div id="start-screen" class="start">
+        <h1>Take This Code Quiz To See How You Stack Up!</h1>
+        <p> Try to answer the following code-related questions within the time
+            limit. Keep in mind that incorrect answers will penalize your
+            score/time by ten seconds!
+        </p>
+        <button id="start">Start Quiz</button>
     </div>
-    <div class="main">
-        <div class="question"></div>
-        <div class="answers"></div>
-        <div class="outcome"></div>
-        <div class="email"></div>
-        <div class="highscores"></div>
+    <!-- Game divs--->
+    <div id="end-screen" class="hide">
+        <h2>All Done!</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <p>
+            Enter initials: <input type="text" id="initials" max="3"/>
+            <button id="submit">Submit</button>
+        </p>
     </div>
+
+    <div id="feedback" class="feedback hide"></div>
+</div>
+
+
+
+
+
+
+
+ <!---JavaScript-->
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/q&a.js"></script>
 </body>
 </html>
+
